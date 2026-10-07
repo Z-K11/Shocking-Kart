@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" width="1000" height="1200">
+  <rect width="1000" height="1200" fill="#fff"/>
+
+  <!-- Simple golden frame -->
+  <circle cx="500" cy="430" r="365" fill="none" stroke="#D99A00" stroke-width="16"/>
+
+  <!-- Plush-toy head silhouette -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- rear orange ear tips -->
+    <ellipse cx="365" cy="205" rx="62" ry="70" fill="#F05A18"/>
+    <ellipse cx="635" cy="205" rx="62" ry="70" fill="#F05A18"/>
+    <ellipse cx="365" cy="210" rx="43" ry="52" fill="#FFE477"/>
+    <ellipse cx="635" cy="210" rx="43" ry="52" fill="#FFE477"/>
+
+    <!-- side ears -->
+    <path d="M315 275 C245 225 155 260 140 340 C125 420 190 455 270 420 L345 350 Z" fill="#49B82F"/>
+    <path d="M685 275 C755 225 845 260 860 340 C875 420 810 455 730 420 L655 350 Z" fill="#49B82F"/>
+    <ellipse cx="230" cy="335" rx="48" ry="92" transform="rotate(52 230 335)" fill="#FFE477"/>
+    <ellipse cx="770" cy="335" rx="48" ry="92" transform="rotate(-52 770 335)" fill="#FFE477"/>
+
+    <!-- main green head -->
+    <path d="M300 250 C360 195 640 195 700 250 C755 300 770 400 750 545 C735 655 665 710 500 715 C335 710 265 655 250 545 C230 400 245 300 300 250 Z" fill="#4CC532"/>
+
+    <!-- subtle side orange patches -->
+    <ellipse cx="276" cy="430" rx="14" ry="45" fill="#F05A18"/>
+    <ellipse cx="724" cy="430" rx="14" ry="45" fill="#F05A18"/>
+
+    <!-- blue tuft -->
+    <path d="M405 285 C390 240 405 190 435 170 C445 205 455 218 465 190 C478 150 505 135 512 185 C530 145 562 135 555 190 C580 155 612 155 590 210 C575 250 535 275 490 295 L455 350 Z" fill="#146BE8" stroke="#0757C7" stroke-width="10"/>
+
+    <!-- eyes -->
+    <path d="M355 390 Q395 365 435 390" fill="none" stroke="#06261A" stroke-width="12"/>
+    <path d="M565 390 Q605 365 645 390" fill="none" stroke="#06261A" stroke-width="12"/>
+    <circle cx="395" cy="440" r="35" fill="#071B25"/>
+    <circle cx="605" cy="440" r="35" fill="#071B25"/>
+    <circle cx="407" cy="428" r="9" fill="#fff"/>
+    <circle cx="617" cy="428" r="9" fill="#fff"/>
+
+    <!-- muzzle -->
+    <path d="M300 555 C340 510 660 510 700 555 C735 595 720 675 665 715 C620 748 380 748 335 715 C280 675 265 595 300 555 Z" fill="#FFE477"/>
+    <path d="M500 560 L500 725" stroke="#E7B93D" stroke-width="5" opacity=".65"/>
+    <circle cx="410" cy="645" r="20" fill="#F26B32"/>
+    <circle cx="590" cy="645" r="20" fill="#F26B32"/>
+    <path d="M325 645 Q330 685 365 705" fill="none" stroke="#14251E" stroke-width="9"/>
+    <path d="M675 645 Q670 685 635 705" fill="none" stroke="#14251E" stroke-width="9"/>
+  </g>
+
+  <!-- Qstore wordmark -->
+  <g fill="#D99A00" font-family="DejaVu Sans, Arial, sans-serif">
+    <text x="335" y="1000" font-size="160" font-weight="800">Q</text>
+    <text x="485" y="985" font-size="88" font-weight="400">store</text>
+  </g>
+</svg>

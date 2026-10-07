@@ -1,0 +1,24 @@
+.logo {
+  border-radius: 0.5rem;
+  display: block;
+  width: 6rem;
+}
+
+header {
+  background-color: var(--mainDark);
+  display: flex;
+  padding: 1vw 3vw;
+  justify-content: space-between;
+}
+.cartLogo {
+  filter: invert();
+  width: 1.8rem;
+}
+.rightContent {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+.headerLink {
+  color: var(--mainLight);
+}
