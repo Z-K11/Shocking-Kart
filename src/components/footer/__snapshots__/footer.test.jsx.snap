@@ -1,0 +1,62 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Footer Component > Renders the footer with correct content 1`] = `
+<div>
+  <footer
+    class="_footNote_021032"
+  >
+    <div
+      class="_leftContent_021032"
+    >
+      <h3>
+        Follow me!
+      </h3>
+      <p>
+        GitHub
+      </p>
+      <p>
+        Facebook
+      </p>
+      <p>
+        Instagram
+      </p>
+      <p>
+        LinkedIn
+      </p>
+    </div>
+    <div
+      class="_footSplitter_021032"
+    />
+    <div
+      class="_rightContent_021032"
+    >
+      <h3>
+        Useful Links
+      </h3>
+      <a
+        data-discover="true"
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        data-discover="true"
+        href="/store"
+      >
+        Store
+      </a>
+      <a
+        data-discover="true"
+        href="/cart"
+      >
+        Checkout
+      </a>
+      <a
+        href="https://www.theodinproject.com"
+      >
+        Odin Project
+      </a>
+    </div>
+  </footer>
+</div>
+`;
