@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header Component > Renders the header content correctly 1`] = `
+<div>
+  <header>
+    <div
+      class="_leftContent_05898b"
+    >
+      <img
+        alt="Qstore Logo"
+        class="_logo_05898b"
+        src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20820'%20width='1000'%20height='820'%3e%3crect%20width='1000'%20height='820'%20fill='%23fff'/%3e%3c!--%20Simple%20golden%20frame%20--%3e%3ccircle%20cx='500'%20cy='430'%20r='365'%20fill='none'%20stroke='%23D99A00'%20stroke-width='16'/%3e%3c!--%20Plush-toy%20head%20silhouette%20--%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c!--%20rear%20orange%20ear%20tips%20--%3e%3cellipse%20cx='365'%20cy='205'%20rx='62'%20ry='70'%20fill='%23F05A18'/%3e%3cellipse%20cx='635'%20cy='205'%20rx='62'%20ry='70'%20fill='%23F05A18'/%3e%3cellipse%20cx='365'%20cy='210'%20rx='43'%20ry='52'%20fill='%23FFE477'/%3e%3cellipse%20cx='635'%20cy='210'%20rx='43'%20ry='52'%20fill='%23FFE477'/%3e%3c!--%20side%20ears%20--%3e%3cpath%20d='M315%20275%20C245%20225%20155%20260%20140%20340%20C125%20420%20190%20455%20270%20420%20L345%20350%20Z'%20fill='%2349B82F'/%3e%3cpath%20d='M685%20275%20C755%20225%20845%20260%20860%20340%20C875%20420%20810%20455%20730%20420%20L655%20350%20Z'%20fill='%2349B82F'/%3e%3cellipse%20cx='230'%20cy='335'%20rx='48'%20ry='92'%20transform='rotate(52%20230%20335)'%20fill='%23FFE477'/%3e%3cellipse%20cx='770'%20cy='335'%20rx='48'%20ry='92'%20transform='rotate(-52%20770%20335)'%20fill='%23FFE477'/%3e%3c!--%20main%20green%20head%20--%3e%3cpath%20d='M300%20250%20C360%20195%20640%20195%20700%20250%20C755%20300%20770%20400%20750%20545%20C735%20655%20665%20710%20500%20715%20C335%20710%20265%20655%20250%20545%20C230%20400%20245%20300%20300%20250%20Z'%20fill='%234CC532'/%3e%3c!--%20subtle%20side%20orange%20patches%20--%3e%3cellipse%20cx='276'%20cy='430'%20rx='14'%20ry='45'%20fill='%23F05A18'/%3e%3cellipse%20cx='724'%20cy='430'%20rx='14'%20ry='45'%20fill='%23F05A18'/%3e%3c!--%20blue%20tuft%20--%3e%3cpath%20d='M405%20285%20C390%20240%20405%20190%20435%20170%20C445%20205%20455%20218%20465%20190%20C478%20150%20505%20135%20512%20185%20C530%20145%20562%20135%20555%20190%20C580%20155%20612%20155%20590%20210%20C575%20250%20535%20275%20490%20295%20L455%20350%20Z'%20fill='%23146BE8'%20stroke='%230757C7'%20stroke-width='10'/%3e%3c!--%20eyes%20--%3e%3cpath%20d='M355%20390%20Q395%20365%20435%20390'%20fill='none'%20stroke='%2306261A'%20stroke-width='12'/%3e%3cpath%20d='M565%20390%20Q605%20365%20645%20390'%20fill='none'%20stroke='%2306261A'%20stroke-width='12'/%3e%3ccircle%20cx='395'%20cy='440'%20r='35'%20fill='%23071B25'/%3e%3ccircle%20cx='605'%20cy='440'%20r='35'%20fill='%23071B25'/%3e%3ccircle%20cx='407'%20cy='428'%20r='9'%20fill='%23fff'/%3e%3ccircle%20cx='617'%20cy='428'%20r='9'%20fill='%23fff'/%3e%3c!--%20muzzle%20--%3e%3cpath%20d='M300%20555%20C340%20510%20660%20510%20700%20555%20C735%20595%20720%20675%20665%20715%20C620%20748%20380%20748%20335%20715%20C280%20675%20265%20595%20300%20555%20Z'%20fill='%23FFE477'/%3e%3cpath%20d='M500%20560%20L500%20725'%20stroke='%23E7B93D'%20stroke-width='5'%20opacity='.65'/%3e%3ccircle%20cx='410'%20cy='645'%20r='20'%20fill='%23F26B32'/%3e%3ccircle%20cx='590'%20cy='645'%20r='20'%20fill='%23F26B32'/%3e%3cpath%20d='M325%20645%20Q330%20685%20365%20705'%20fill='none'%20stroke='%2314251E'%20stroke-width='9'/%3e%3cpath%20d='M675%20645%20Q670%20685%20635%20705'%20fill='none'%20stroke='%2314251E'%20stroke-width='9'/%3e%3c/g%3e%3c/svg%3e"
+      />
+    </div>
+    <div
+      class="_rightContent_05898b"
+    >
+      <a
+        class="_headerLink_05898b"
+        data-discover="true"
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        class="_headerLink_05898b"
+        data-discover="true"
+        href="/store"
+      >
+        Store
+      </a>
+      <a
+        class="_headerLink_05898b"
+        data-discover="true"
+        href="/cart"
+      >
+        <img
+          alt="shopping cart logo"
+          class="_cartLogo_05898b"
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M17,18C15.89,18%2015,18.89%2015,20A2,2%200%200,0%2017,22A2,2%200%200,0%2019,20C19,18.89%2018.1,18%2017,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32%205,14.65%205,15A2,2%200%200,0%207,17H19V15H7.42A0.25,0.25%200%200,1%207.17,14.75C7.17,14.7%207.18,14.66%207.2,14.63L8.1,13H15.55C16.3,13%2016.96,12.58%2017.3,11.97L20.88,5.5C20.95,5.34%2021,5.17%2021,5A1,1%200%200,0%2020,4H5.21L4.27,2M7,18C5.89,18%205,18.89%205,20A2,2%200%200,0%207,22A2,2%200%200,0%209,20C9,18.89%208.1,18%207,18Z'%20/%3e%3c/svg%3e"
+        />
+      </a>
+    </div>
+  </header>
+</div>
+`;
