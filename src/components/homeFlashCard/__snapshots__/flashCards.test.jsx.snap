@@ -1,0 +1,71 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FlashCards Component > Renders the flash cards with correct content 1`] = `
+<div>
+  <div
+    class="_mainContent_2704b8"
+  >
+    <h2>
+      The store for all your childish needs
+    </h2>
+    <div
+      class="_cardsContainer_2704b8"
+    >
+      <div
+        class="_cardRight_2704b8"
+      >
+        <div
+          class="_cardText_2704b8"
+        >
+          <h2>
+            Stationary
+          </h2>
+          <p>
+            All your colorful stationary in one place.
+          </p>
+        </div>
+        <img
+          alt="stationary items"
+          src="/src/assets/stationary.webp"
+        />
+      </div>
+      <div
+        class="_cardLeft_2704b8"
+      >
+        <img
+          alt="img of lego toy bricks"
+          src="/src/assets/toys.webp"
+        />
+        <div
+          class="_cardText_2704b8"
+        >
+          <h2>
+            Toys
+          </h2>
+          <p>
+            Any type of toy you want, we got it at the Qstore!
+          </p>
+        </div>
+      </div>
+      <div
+        class="_cardRight_2704b8"
+      >
+        <div
+          class="_cardText_2704b8"
+        >
+          <h2>
+            Clothes
+          </h2>
+          <p>
+            Qutdubeen Loves to dress up like a kid again!
+          </p>
+        </div>
+        <img
+          alt="casual shirt with printed design"
+          src="/src/assets/shirt.webp"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
