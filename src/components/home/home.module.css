@@ -1,0 +1,37 @@
+.heroContainer img {
+  display: block;
+  width: 100vw;
+}
+.heroContainer h1 {
+  background-color: rgba(0, 0, 0, 0.39);
+  color: var(--background);
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  padding: 2vw 0;
+  text-decoration: underline;
+  font-size: var(--h3Font);
+}
+.heroContainer {
+  position: relative;
+}
+.mainContent {
+  padding: 3rem 3vw;
+  color: var(--mainDark);
+}
+.cardsContainer {
+  padding: 10vw 0;
+  color: var(--main);
+}
+.cardRight {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 7vw 5vw;
+  background-color: var(--mainLight);
+  border-radius: 1rem;
+}
+.cardRight img {
+  border-radius: 1rem;
+}
