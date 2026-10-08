@@ -7,17 +7,17 @@
 header {
   background-color: var(--mainDark);
   display: flex;
-  padding: 1vw 3vw;
+  padding: 1.5vw 2vw;
   justify-content: space-between;
 }
 .cartLogo {
   filter: invert();
-  width: 1.8rem;
+  width: 2rem;
 }
 .rightContent {
   display: flex;
   align-items: center;
-  gap: 3vw;
+  gap: 5vw;
 }
 .headerLink {
   color: var(--mainLight);

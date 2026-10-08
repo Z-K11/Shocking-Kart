@@ -1,0 +1,27 @@
+.errorBody {
+  background-color: var(--mainDark);
+  height: 100vh;
+  color: var(--background);
+  display: flex;
+  align-items: center;
+  padding: 0 3vw;
+  gap: 3vw;
+  font-size: var(--bodyFont);
+}
+.errorLogo {
+  width: 30vw;
+  border-radius: 1rem;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: flex-start;
+}
+.errorLink {
+  background-color: var(--background);
+  color: var(--mainDark);
+  border: 0.1rem solid var(--mainLight);
+  padding: 2vw;
+  border-radius: 2rem;
+}
