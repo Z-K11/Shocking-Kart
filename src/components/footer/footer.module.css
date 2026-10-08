@@ -33,6 +33,7 @@
   padding: 2vw;
   border-right: 0.1rem solid var(--background);
 }
-.rightContent a {
+.rightContent a,
+.leftContent a {
   color: var(--background);
 }
