@@ -1,0 +1,36 @@
+.mainContent {
+  padding: 3rem 3vw;
+  color: var(--mainDark);
+}
+.cardsContainer {
+  padding: 10vw 0;
+  color: var(--main);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  padding: 7vw 5vw;
+  background-color: var(--mainLight);
+  border-radius: 1rem;
+  align-items: center;
+}
+.cardRight,
+.cardLeft {
+  composes: cards;
+  border-bottom: 0.3rem solid var(--mainDark);
+}
+.cardRight img,
+.cardLeft img {
+  border-radius: 1rem;
+}
+
+.cardRight {
+  border-right: 0.3rem solid var(--mainDark);
+}
+.cardLeft {
+  border-left: 0.3rem solid var(--mainDark);
+}
