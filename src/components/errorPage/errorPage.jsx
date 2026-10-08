@@ -8,7 +8,7 @@ const ErrorPage = () => {
       <div className={styles.message}>
         <p>
           Sadly the page you are looking for doesn't exist on this website. Do
-          not worry friends Qutbudeen Can Take you back
+          not worry friends Qutbudeen, can Take you back
         </p>
         <Link className={styles.errorLink} to="/">
           Go Back Home
