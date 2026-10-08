@@ -1,6 +1,7 @@
 .errorBody {
   background-color: var(--mainDark);
   height: 100vh;
+  height: 100dvh;
   color: var(--background);
   display: flex;
   align-items: center;

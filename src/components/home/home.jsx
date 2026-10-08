@@ -1,5 +1,2 @@
-import Header from '../header/header';
-const Home = () => {
-  return <Header />;
-};
+const Home = () => {};
 export default Home;
