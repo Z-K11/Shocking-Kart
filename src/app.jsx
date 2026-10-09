@@ -10,12 +10,12 @@ const App = () => {
     const controller = new AbortController();
     async function getFakeData() {
       try {
-        const data = await fetch(`https://fakestoreapi.com/products`, {
-          signal: TaskController.singal,
+        const response = await fetch(`https://fakestoreapi.com/products`, {
+          signal: controller.signal,
         });
-        if (!data.ok()) throw new Error(`Request failed ${data.status}`);
-        const response = await data.json();
-        setProducts(response);
+        if (!response.ok) throw new Error(`Request failed ${response.status}`);
+        const data = await response.json();
+        setProducts(data);
       } catch (err) {
         if (err.name !== 'AbortError') setError(err);
         return;
