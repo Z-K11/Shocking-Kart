@@ -100,13 +100,23 @@ const Shop = () => {
                 </button>
               </div>
             </div>
-            <button
-              data-action="submit"
-              id={`c-${item.id}`}
-              className={styles.submitButton}
-            >
-              Add to cart
-            </button>
+            {item.inCart ? (
+              <button
+                data-action="submit"
+                id={`c-${item.id}`}
+                className={styles.submitButton}
+              >
+                In cart
+              </button>
+            ) : (
+              <button
+                data-action="submit"
+                id={`c-${item.id}`}
+                className={styles.submitButton}
+              >
+                Add to cart
+              </button>
+            )}
           </div>
         );
       })}
