@@ -17,7 +17,7 @@ const App = () => {
         const data = await response.json();
         const storeItems = data.map((item) => ({
           ...item,
-          quantity: 0,
+          quantity: '',
           inCart: false,
         }));
         setProducts(storeItems);
@@ -33,7 +33,7 @@ const App = () => {
     <>
       <Header />
       <main className={styles.runner}>
-        <Outlet context={{ products, error }} />
+        <Outlet context={{ products, error, setProducts }} />
       </main>
       <Footer />
     </>
