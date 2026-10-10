@@ -31,7 +31,7 @@ const App = () => {
   }, []);
   return (
     <>
-      <Header />
+      <Header productItems={products} />
       <main className={styles.runner}>
         <Outlet context={{ products, error, setProducts }} />
       </main>

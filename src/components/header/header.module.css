@@ -18,7 +18,16 @@ header {
   display: flex;
   align-items: center;
   gap: 5vw;
+  padding: 0 5vw;
 }
 .headerLink {
   color: var(--mainLight);
+}
+.checkout {
+  position: relative;
+}
+.checkout p {
+  position: absolute;
+  top: -50%;
+  left: 100%;
 }
