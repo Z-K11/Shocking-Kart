@@ -52,6 +52,7 @@ const Shop = () => {
                   item.quantity === '' || item.quantity === 0
                     ? ''
                     : item.quantity - 1,
+                inCart: item.quantity - 1 < 1 ? false : item.inCart,
               }
             : item
         )
@@ -102,7 +103,7 @@ const Shop = () => {
                 </button>
               </div>
             </div>
-            {item.inCart ? (
+            {item.inCart && item.quantity > 0 ? (
               <button
                 data-action="submit"
                 id={`c-${item.id}`}
