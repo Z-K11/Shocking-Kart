@@ -56,6 +56,13 @@ const Shop = () => {
             : item
         )
       );
+    } else if (action === 'submit') {
+      // find matching product and set it's inCart property to true
+      setProducts((prev) =>
+        prev.map((item) =>
+          item.id === targetId ? { ...item, inCart: true } : item
+        )
+      );
     }
   };
   // If fetch request threw and Error show Error message on the page
@@ -93,6 +100,13 @@ const Shop = () => {
                 </button>
               </div>
             </div>
+            <button
+              data-action="submit"
+              id={`c-${item.id}`}
+              className={styles.submitButton}
+            >
+              Add to cart
+            </button>
           </div>
         );
       })}
