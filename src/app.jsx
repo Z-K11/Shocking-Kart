@@ -15,7 +15,12 @@ const App = () => {
         });
         if (!response.ok) throw new Error(`Request failed ${response.status}`);
         const data = await response.json();
-        setProducts(data);
+        const storeItems = data.map((item) => ({
+          ...item,
+          quantity: 0,
+          inCart: false,
+        }));
+        setProducts(storeItems);
       } catch (err) {
         if (err.name !== 'AbortError') setError(err);
         return;

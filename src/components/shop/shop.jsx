@@ -21,7 +21,11 @@ const Shop = () => {
               <label htmlFor={`quantity +${item.id}`}>Quantity: </label>
               <div className={styles.quantityRight}>
                 <button>-</button>
-                <input type="number" id={`quantity +${item.id}`} />
+                <input
+                  type="number"
+                  id={`quantity +${item.id}`}
+                  value={item.quantity}
+                />
                 <button>+</button>
               </div>
             </div>
