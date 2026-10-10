@@ -60,7 +60,9 @@ const Shop = () => {
       // find matching product and set it's inCart property to true
       setProducts((prev) =>
         prev.map((item) =>
-          item.id === targetId ? { ...item, inCart: true } : item
+          item.id === targetId && item.quantity >= 1
+            ? { ...item, inCart: true }
+            : item
         )
       );
     }
