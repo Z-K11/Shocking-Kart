@@ -6,7 +6,6 @@ const Header = ({ productItems }) => {
   let count = 0;
   if (productItems) {
     for (const item of productItems) {
-      console.log(item);
       if (item.inCart) count += 1;
     }
   }
@@ -22,7 +21,7 @@ const Header = ({ productItems }) => {
         <Link to="store" className={styles.headerLink}>
           Store
         </Link>
-        <Link to="cart" className={styles.headerLink}>
+        <Link to="checkout" className={styles.headerLink}>
           <div className={styles.checkout}>
             <img
               src={cart}
