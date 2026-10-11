@@ -67,3 +67,22 @@
   padding: 0.3rem 0.6rem;
   border-radius: 1rem;
 }
+.buttons button {
+  padding: 0 0.6rem;
+
+  border: 0.1rem solid var(--main);
+  color: var(--mainDark);
+  border-radius: 0.5rem;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+}
+.buttons button:last-child {
+  padding: 0 0.4rem;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}

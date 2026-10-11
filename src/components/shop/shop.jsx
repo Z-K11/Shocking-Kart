@@ -73,7 +73,6 @@ const Shop = () => {
 
   // If fetch did not throw and error and is currently fetching the data show Loading
   if (!products) return <p>Loading...</p>;
-  console.log(products);
   return (
     <div className={styles.storeWrapper} onClick={storeHandler}>
       {products.map((item) => {

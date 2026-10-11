@@ -3,8 +3,16 @@ import logo from '../../assets/Qstore_logo_head_only_download.svg';
 import { useOutletContext } from 'react-router';
 
 const Checkout = () => {
-  const { products, setProducts } = useOutletContext();
+  const { products, setProducts, error } = useOutletContext();
+  if (error) return <p>Error: {error.message}</p>;
+  if (!products)
+    return (
+      <div className={styles.loading}>
+        <p>Loading...</p>
+      </div>
+    );
   const cartItems = products.filter((item) => item.inCart);
+  console.log(cartItems);
   const total = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
@@ -20,14 +28,27 @@ const Checkout = () => {
           item.id === targetId ? { ...item, quantity: '', inCart: false } : item
         )
       );
+    } else if (action === 'increase') {
+      setProducts((prev) =>
+        prev.map((item) =>
+          item.id === targetId ? { ...item, quantity: item.quantity + 1 } : item
+        )
+      );
+    } else if (action === 'decrease') {
+      setProducts((prev) =>
+        prev.map((item) =>
+          item.id === targetId
+            ? {
+                ...item,
+                quantity: item.quantity - 1,
+                inCart: item.quantity - 1 < 1 ? false : item.inCart,
+              }
+            : item
+        )
+      );
     }
   };
-  if (!products)
-    return (
-      <div className={styles.loading}>
-        <p>Loading...</p>
-      </div>
-    );
+
   return (
     <div className={styles.checkoutWrapper} onClick={handleItemAction}>
       <div className={styles.checkoutItems}>
@@ -39,32 +60,42 @@ const Checkout = () => {
                 <p>
                   Price : {item.price} x {item.quantity}
                 </p>
-                <p>Total : {item.price * item.quantity}</p>
+                <p>Total : {Math.floor(item.price * item.quantity)}</p>
                 <button data-action="remove" id={`r-${item.id}`}>
                   Remove
                 </button>
               </div>
               <div className={styles.rightContent}>
                 <img src={item.image} alt={`Image of ${item.title}`} />
+                <div className={styles.buttons}>
+                  <button data-action="decrease" id={`s-${item.id}`}>
+                    -
+                  </button>
+                  <button data-action="increase" id={`a-${item.id}`}>
+                    +
+                  </button>
+                </div>
               </div>
             </div>
           );
         })}
       </div>
-      <div className={styles.total}>
-        <h1>Checkout</h1>
-        <div className={styles.checkoutLogo}>
-          <img src={logo} alt="store logo" />
+      {cartItems.length > 0 && (
+        <div className={styles.total}>
+          <h1>Checkout</h1>
+          <div className={styles.checkoutLogo}>
+            <img src={logo} alt="store logo" />
+          </div>
+          <hr />
+          <p>Total items: {cartItems.length}</p>
+          <hr />
+          <p>Cost: Rs {Math.floor(total)}</p>
+          <hr />
+          <p>Shipping : Rs 30</p>
+          <hr />
+          <p>Grand Total: {Math.floor(total > 0 ? total + 30 : 0)}</p>
         </div>
-        <hr />
-        <p>Total items: {cartItems.length}</p>
-        <hr />
-        <p>Cost: Rs {Math.floor(total)}</p>
-        <hr />
-        <p>Shipping : Rs 30</p>
-        <hr />
-        <p>Grand Total: {total > 0 ? total + 30 : 0}</p>
-      </div>
+      )}
     </div>
   );
 };
